@@ -1,36 +1,36 @@
 let bascet_section = document.querySelector(".bascet_section")
-let basket_json = {
-    1: {
+let basket_json = [
+    {
         'img': 'ice-cream/01.png',
         'name': 'Zolotoy',
         'price': 15000,
         'count': 3,
         'total_price': 45000
     },
-    2: {
+    {
         'img': 'chocolate/04.png',
         'name': 'Kit Kat',
         'price': 12000,
         'count': 1,
         'total_price': 12000
     },
-    3: {
+    {
         'img': 'drink/03.png',
         'name': 'coca-cola',
         'price': 14000,
         'count': 3,
         'total_price': 42000
     },
-    4: {
+    {
         'img': 'chocolate/13.png',
         'name': 'Alpen Gold',
         'price': 13000,
         'count': 3,
         'total_price': 39000
     },
-}
+]
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 1; i < basket_json.length; i++) {
     let div = document.createElement("div")
     div.classList.add("product_bascet")
     div.innerHTML = `
